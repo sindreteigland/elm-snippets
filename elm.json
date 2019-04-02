@@ -1,0 +1,508 @@
+{
+  // Place your snippets for elm here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+
+  // ------------- HTML -------------
+  //_____________ Tags _____________
+  // Headers
+  "h1": {
+    "prefix": "h1",
+    "body": "h1 [ $1 ][ $2 ]"
+  },
+  "h2": {
+    "prefix": "h2",
+    "body": "h2 [ $1 ][ $2 ]"
+  },
+  "h3": {
+    "prefix": "h3",
+    "body": "h3 [ $1 ][ $2 ]"
+  },
+  "h4": {
+    "prefix": "h4",
+    "body": "h4 [ $1 ][ $2 ]"
+  },
+  "h5": {
+    "prefix": "h5",
+    "body": "h5 [ $1 ][ $2 ]"
+  },
+  "h6": {
+    "prefix": "h6",
+    "body": "h6 [ $1 ][ $2 ]"
+  },
+
+  // Grouping Content
+  "div": {
+    "prefix": "div",
+    "body": "div [ $1 ][ $2 ]",
+    "description": "Represents a generic container with no special meaning."
+  },
+  "p": {
+    "prefix": "p",
+    "body": "p [ $1 ][ $2 ]",
+    "description": "Defines a portion that should be displayed as a paragraph."
+  },
+  "hr": {
+    "prefix": "hr",
+    "body": "hr [][]",
+    "description": "Represents a thematic break between paragraphs of a section or article or any longer content."
+  },
+  "pre": {
+    "prefix": "pre",
+    "body": "pre [ $1 ][ $2 ]",
+    "description": "Indicates that its content is preformatted and that this format must be preserved."
+  },
+  "blockquote": {
+    "prefix": "blockquote",
+    "body": "blockquote [ $1 ][ $2 ]",
+    "description": "Represents a content that is quoted from another source."
+  },
+
+  // Text
+  "span": {
+    "prefix": "span",
+    "body": "span [ $1 ][ $2 ]",
+    "description": "Represents text with no specific meaning. This has to be used when no other text-semantic element conveys an adequate meaning, which, in this case, is often brought by global attributes like class, lang, or dir."
+  },
+  "a": {
+    "prefix": "a",
+    "body": "a [ href=\"$1\" ][ $2 ]",
+    "description": "Represents a hyperlink, linking to another resource."
+  },
+  "code": {
+    "prefix": "code",
+    "body": "code [ $1 ][ $2 ]",
+    "description": "Represents computer code."
+  },
+  "em": {
+    "prefix": "em",
+    "body": "em [ $1 ][ $2 ]",
+    "description": "Represents emphasized text, like a stress accent."
+  },
+  "strong": {
+    "prefix": "strong",
+    "body": "strong [ $1 ][ $2 ]",
+    "description": "Represents especially important text."
+  },
+  "i": {
+    "prefix": "i",
+    "body": "i [ $1 ][ $2 ]",
+    "description": "Represents some text in an alternate voice or mood, or at least of different quality, such as a taxonomic designation, a technical term, an idiomatic phrase, a thought, or a ship name."
+  },
+  "b": {
+    "prefix": "b",
+    "body": "b [ $1 ][ $2 ]",
+    "description": "Represents a text which to which attention is drawn for utilitarian purposes. It doesn't convey extra importance and doesn't imply an alternate voice."
+  },
+  "u": {
+    "prefix": "u",
+    "body": "u [ $1 ][ $2 ]",
+    "description": "Represents a non-textual annotation for which the conventional presentation is underlining, such labeling the text as being misspelt or labeling a proper name in Chinese text."
+  },
+  "sub": {
+    "prefix": "sub",
+    "body": "sub [ $1 ][ $2 ]",
+    "description": "Represent a subscript."
+  },
+  "sup": {
+    "prefix": "sup",
+    "body": "sup [ $1 ][ $2 ]",
+    "description": "Represent a superscript."
+  },
+  "br": {
+    "prefix": "br",
+    "body": "br [][]",
+    "description": "Represents a generic container with no special meaning."
+  },
+
+  // Lists
+  "ol": {
+    "prefix": "ol",
+    "body": "ol [ $1 ][ $2 ]",
+    "description": "Defines an ordered list of items."
+  },
+  "ul": {
+    "prefix": "ul",
+    "body": "ul [ $1 ][ $2 ]",
+    "description": "Defines an unordered list of items."
+  },
+  "li": {
+    "prefix": "li",
+    "body": "li [ $1 ][ $2 ]",
+    "description": "Defines a item of an enumeration list."
+  },
+  "dl": {
+    "prefix": "dl",
+    "body": "dl [ $1 ][ $2 ]",
+    "description": "Defines a definition list, that is, a list of terms and their associated definitions."
+  },
+  "dt": {
+    "prefix": "dt",
+    "body": "dt [ $1 ][ $2 ]",
+    "description": "Represents a term defined by the next dd."
+  },
+  "dd": {
+    "prefix": "dd",
+    "body": "dd [ $1 ][ $2 ]",
+    "description": "Represents the definition of the terms immediately listed before it."
+  },
+
+  // Embedded Content
+  "img": {
+    "prefix": "img",
+    "body": "img [ src $1, alt $2 ][]",
+    "description": "Represents an image."
+  },
+  "iframe": {
+    "prefix": "iframe",
+    "body": "iframe [ src $1 ][ $2 ]",
+    "description": "Embedded an HTML document."
+  },
+  "canvas": {
+    "prefix": "canvas",
+    "body": "canvas [ $1 ][ $2 ]",
+    "description": "Represents a bitmap area for graphics rendering."
+  },
+  "math": {
+    "prefix": "math",
+    "body": "math [ $1 ][ $2 ]",
+    "description": "Defines a mathematical formula."
+  },
+
+  // Inputs
+  "form": {
+    "prefix": "form",
+    "body": "form [ action $1 ][ $2 ]",
+    "description": "Represents a form, consisting of controls, that can be submitted to a server for processing."
+  },
+  "input": {
+    "prefix": "input",
+    "body": "input [ type \"${1:text}\" ][ $2 ]",
+    "description": "Represents a typed data field allowing the user to edit the data."
+  },
+  "textarea": {
+    "prefix": "textarea",
+    "body": "textarea [ name $1, id $2, cols \"${3:30}\", rows \"${4:10}\" ][ $5 ]",
+    "description": "Represents a multiline text edit control."
+  },
+  "button": {
+    "prefix": "button",
+    "body": "button [ $1 ][ $2 ]",
+    "description": "Represents a button."
+  },
+  "select": {
+    "prefix": "select",
+    "body": "select [  name $1, id $2, ][ $3 ]",
+    "description": "Represents a control allowing selection among a set of options."
+  },
+  "option": {
+    "prefix": "option",
+    "body": "option [ value $1 ][ $2 ]",
+    "description": "Represents an option in a select element or a suggestion of a datalist element."
+  },
+
+  // Sections
+  "section": {
+    "prefix": "section",
+    "body": "section [ $1 ][ $2 ]",
+    "description": "Defines a section in a document."
+  },
+  "nav": {
+    "prefix": "nav",
+    "body": "nav [ $1 ][ $2 ]",
+    "description": "Defines a section that contains only navigation links."
+  },
+  "article": {
+    "prefix": "article",
+    "body": "article [ $1 ][ $2 ]",
+    "description": "Defines self-contained content that could exist independently of the rest of the content."
+  },
+  "aside": {
+    "prefix": "aside",
+    "body": "aside [ $1 ][ $2 ]",
+    "description": "Defines some content loosely related to the page content. If it is removed, the remaining content still makes sense."
+  },
+  "header": {
+    "prefix": "header",
+    "body": "header [ $1 ][ $2 ]",
+    "description": "Defines the header of a page or section. It often contains a logo, the title of the web site, and a navigational table of content"
+  },
+  "footer": {
+    "prefix": "footer",
+    "body": "footer [ $1 ][ $2 ]",
+    "description": "Defines the footer for a page or section. It often contains a copyright notice, some links to legal information, or addresses to give feedback."
+  },
+  "address": {
+    "prefix": "address",
+    "body": "address [ $1 ][ $2 ]",
+    "description": "Defines a section containing contact information."
+  },
+  "_main": {
+    "prefix": "_main",
+    "body": "_main [ $1 ][ $2 ]",
+    "description": "Defines the main or important content in the document. There is only one main element in the document."
+  },
+
+  // Figures
+  "figure": {
+    "prefix": "figure",
+    "body": "figure [ $1 ][ $2 ]",
+    "description": "Represents a figure illustrated as part of the document."
+  },
+  "figcaption": {
+    "prefix": "figcaption",
+    "body": "figcaption [ $1 ][ $2 ]",
+    "description": "Represents the legend of a figure."
+  },
+
+  // Tables
+  "table": {
+    "prefix": "table",
+    "body": "table [ $1 ][ $2 ]",
+    "description": "Represents the block of rows that describes the concrete data of a table."
+  },
+  "tbody": {
+    "prefix": "tbody",
+    "body": "tbody [ $1 ][ $2 ]",
+    "description": "Represents the block of rows that describes the concrete data of a table."
+  },
+  "thead": {
+    "prefix": "math",
+    "body": "math [ $1 ][ $2 ]",
+    "description": "Represents the block of rows that describes the column labels of a table."
+  },
+  "tfoot": {
+    "prefix": "tfoot",
+    "body": "tfoot [ $1 ][ $2 ]",
+    "description": "Represents the block of rows that describes the column summaries of a table."
+  },
+  "tr": {
+    "prefix": "tr",
+    "body": "tr [ $1 ][ $2 ]",
+    "description": "Represents a row of cells in a table."
+  },
+  "td": {
+    "prefix": "td",
+    "body": "td [ $1 ][ $2 ]",
+    "description": "Represents a data cell in a table."
+  },
+  "th": {
+    "prefix": "th",
+    "body": "th [ $1 ][ $2 ]",
+    "description": "Represents a header cell in a table."
+  },
+
+  // Less Common Elements
+  "fieldset": {
+    "prefix": "fieldset",
+    "body": "fieldset [ $1 ][ $2 ]",
+    "description": "Represents a set of controls."
+  },
+  "legend": {
+    "prefix": "legend",
+    "body": "legend [ $1 ][ $2 ]",
+    "description": "Represents the caption for a fieldset."
+  },
+  "label": {
+    "prefix": "label",
+    "body": "label [ for $1 ][ $2 ]",
+    "description": "Represents the caption of a form control."
+  },
+  "datalist": {
+    "prefix": "datalist",
+    "body": "datalist [ $1 ][ $2 ]",
+    "description": "Represents a set of predefined options for other controls."
+  },
+  "optgroup": {
+    "prefix": "optgroup",
+    "body": "optgroup [ $1 ][ $2 ]",
+    "description": "Represents a set of options, logically grouped."
+  },
+  "output": {
+    "prefix": "output",
+    "body": "output [ $1 ][ $2 ]",
+    "description": "Represents the result of a calculation."
+  },
+  "progress": {
+    "prefix": "progress",
+    "body": "progress [ $1 ][ $2 ]",
+    "description": "Represents the completion progress of a task."
+  },
+  "meter": {
+    "prefix": "math",
+    "body": "math [ $1 ][ $2 ]",
+    "description": "Represents a scalar measurement (or a fractional value), within a known range."
+  },
+
+  // Audio and Video
+  "audio": {
+    "prefix": "audio",
+    "body": "audio [ src $1 ][ $2 ]",
+    "description": "Represents a sound or audio stream."
+  },
+  "video": {
+    "prefix": "video",
+    "body": "video [ src $1 ][ $2 ]",
+    "description": "Represents a video, the associated audio and captions, and controls."
+  },
+  "source": {
+    "prefix": "source",
+    "body": "source [][]",
+    "description": "Allows authors to specify alternative media resources for media elements like video or audio."
+  },
+  "track": {
+    "prefix": "track",
+    "body": "track [ $1 ][ $2 ]",
+    "description": "Allows authors to specify timed text track for media elements like video or audio."
+  },
+
+  // Embedded Objects
+  "Embed": {
+    "prefix": "Embed",
+    "body": "Embed [ src $1, type $2 ][]",
+    "description": "Represents a integration point for an external, often non-HTML, application or interactive content."
+  },
+  "object": {
+    "prefix": "object",
+    "body": "object [ data $1, type $2 ][ $3 ]",
+    "description": "Represents an external resource, which is treated as an image, an HTML sub-document, or an external resource to be processed by a plug-in."
+  },
+  "param": {
+    "prefix": "param",
+    "body": "param [ name $1 $value $2 ][]",
+    "description": "Defines parameters for use by plug-ins invoked by object elements."
+  },
+
+  // Text Edits
+  "ins": {
+    "prefix": "ins",
+    "body": "ins [ $1 ][ $2 ]",
+    "description": "Defines an addition to the document."
+  },
+  "del": {
+    "prefix": "del",
+    "body": "del [ $1 ][ $2 ]",
+    "description": "Defines a removal from the document."
+  },
+
+  //Semantic Text
+  "small": {
+    "prefix": "small",
+    "body": "small [ $1 ][ $2 ]",
+    "description": "Represents a side comment, that is, text like a disclaimer or a copyright, which is not essential to the comprehension of the document."
+  },
+  "cite": {
+    "prefix": "cite",
+    "body": "cite [ $1 ][ $2 ]",
+    "description": "Represents the title of a work."
+  },
+  "dfn": {
+    "prefix": "dfn",
+    "body": "dfn [ $1 ][ $2 ]",
+    "description": "Represents a term whose definition is contained in its nearest ancestor content."
+  },
+  "abbr": {
+    "prefix": "abbr",
+    "body": "abbr [ title $1 ][ $2 ]",
+    "description": "Represents an abbreviation or an acronym; the expansion of the abbreviation can be represented in the title attribute."
+  },
+  "time": {
+    "prefix": "time",
+    "body": "time [ $1 ][ $2 ]",
+    "description": "Represents a date and time value; the machine-readable equivalent can be represented in the datetime attribute."
+  },
+  "var": {
+    "prefix": "var",
+    "body": "var [ $1 ][ $2 ]",
+    "description": "Represents a variable. Specific cases where it should be used include an actual mathematical expression or programming context, an identifier representing a constant, a symbol identifying a physical quantity, a function parameter, or a mere placeholder in prose."
+  },
+  "samp": {
+    "prefix": "samp",
+    "body": "samp [ $1 ][ $2 ]",
+    "description": "Represents the output of a program or a computer."
+  },
+  "kbd": {
+    "prefix": "kbd",
+    "body": "kbd [ $1 ][ $2 ]",
+    "description": "Represents user input, often from the keyboard, but not necessarily; it may represent other input, like transcribed voice commands."
+  },
+  "s": {
+    "prefix": "s",
+    "body": "s [ $1 ][ $2 ]",
+    "description": "Represents content that is no longer accurate or relevant."
+  },
+  "q": {
+    "prefix": "q",
+    "body": "q [ $1 ][ $2 ]",
+    "description": "Represents an inline quotation."
+  },
+
+  //Less Common Text Tags
+  "mark": {
+    "prefix": "mark",
+    "body": "mark [ $1 ][ $2 ]",
+    "description": "Represents text highlighted for reference purposes, that is for its relevance in another context."
+  },
+  "ruby": {
+    "prefix": "ruby",
+    "body": "ruby [ $1 ][ $2 ]",
+    "description": "Represents content to be marked with ruby annotations, short runs of text presented alongside the text. This is often used in conjunction with East Asian language where the annotations act as a guide for pronunciation, like the Japanese furigana."
+  },
+  "rt": {
+    "prefix": "rt",
+    "body": "rt [ $1 ][ $2 ]",
+    "description": "Represents the text of a ruby annotation."
+  },
+  "rp": {
+    "prefix": "rp",
+    "body": "rp [ $1 ][ $2 ]",
+    "description": "Represents parenthesis around a ruby annotation, used to display the annotation in an alternate way by browsers not supporting the standard display for annotations."
+  },
+  "bdi": {
+    "prefix": "bdi",
+    "body": "bdi [ $1 ][ $2 ]",
+    "description": "Represents text that must be isolated from its surrounding for bidirectional text formatting. It allows embedding a span of text with a different, or unknown, directionality."
+  },
+  "bdo": {
+    "prefix": "bdo",
+    "body": "bdo [ dir $1 ][ $2 ]",
+    "description": "Represents the directionality of its children, in order to explicitly override the Unicode bidirectional algorithm."
+  },
+  "wbr": {
+    "prefix": "wbr",
+    "body": "wbr [ $1 ][ $2 ]",
+    "description": "Represents a line break opportunity, that is a suggested point for wrapping text in order to improve readability of text split on several lines."
+  },
+
+  //Interactive Elements
+  "details": {
+    "prefix": "details",
+    "body": "details [ $1 ][ $2 ]",
+    "description": "Represents a widget from which the user can obtain additional information or controls."
+  },
+  //   "summars": {
+  //     "prefix": "summars",
+  //     "body": "summars [ $1 ][ $2 ]",
+  //     "description": "Defines a mathematical formula."
+  //   },
+  "menuitem": {
+    "prefix": "menuitem",
+    "body": "menuitem [ $1 ][ $2 ]",
+    "description": "Represents a command that the user can invoke."
+  },
+  "menu": {
+    "prefix": "menu",
+    "body": "menu [ $1 ][ $2 ]",
+    "description": "Represents a list of commands."
+  }
+}
